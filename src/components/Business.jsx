@@ -15,7 +15,7 @@ function Business() {
               { t:'Suport barista', d:'Training pentru echipă și rețete standardizate pentru meniuri.' },
               { t:'Ambalaj premium', d:'Pungi cu supapă și atmosferă protectoare, 30g / 500g / 1kg.' },
             ].map((f,i)=>(
-              <div key={i} className="rounded-2xl border border-[#2F4F2F]/10 bg-white p-6">
+              <div key={i} className="rounded-2xl border border-[#2F4F2F]/10 bg-white p-6 hover:shadow-sm transition-shadow">
                 <h3 className="text-lg font-serif text-[#1A1A1A]">{f.t}</h3>
                 <p className="mt-2 text-sm text-[#1A1A1A]/70">{f.d}</p>
               </div>

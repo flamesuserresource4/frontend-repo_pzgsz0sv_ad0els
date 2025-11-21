@@ -32,19 +32,48 @@ function Contact() {
                   <label className="block text-sm text-[#1A1A1A]/70 mb-1">Email</label>
                   <input type="email" className="w-full rounded-md border border-[#2F4F2F]/20 bg-white px-3 py-2 outline-none focus:border-[#2F4F2F]" required />
                 </div>
-                <div>
-                  <label className="block text-sm text-[#1A1A1A]/70 mb-1">Tip client</label>
-                  <select className="w-full rounded-md border border-[#2F4F2F]/20 bg-white px-3 py-2 outline-none focus:border-[#2F4F2F]">
-                    <option>Restaurant / Cafenea</option>
-                    <option>Retail / Supermarket</option>
-                    <option>Persoană fizică</option>
-                  </select>
+                <div className="grid grid-cols-2 gap-3">
+                  <div>
+                    <label className="block text-sm text-[#1A1A1A]/70 mb-1">Tip client</label>
+                    <select className="w-full rounded-md border border-[#2F4F2F]/20 bg-white px-3 py-2 outline-none focus:border-[#2F4F2F]">
+                      <option>Restaurant / Cafenea</option>
+                      <option>Retail / Supermarket</option>
+                      <option>Persoană fizică</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label className="block text-sm text-[#1A1A1A]/70 mb-1">Volum lunar</label>
+                    <select className="w-full rounded-md border border-[#2F4F2F]/20 bg-white px-3 py-2 outline-none focus:border-[#2F4F2F]">
+                      <option>mostre</option>
+                      <option>1–5 kg</option>
+                      <option>5–20 kg</option>
+                      <option>20kg+</option>
+                    </select>
+                  </div>
+                </div>
+                <div className="grid grid-cols-2 gap-3">
+                  <div>
+                    <label className="block text-sm text-[#1A1A1A]/70 mb-1">Ambalaj</label>
+                    <select className="w-full rounded-md border border-[#2F4F2F]/20 bg-white px-3 py-2 outline-none focus:border-[#2F4F2F]">
+                      <option>30g</option>
+                      <option>500g</option>
+                      <option>1kg</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label className="block text-sm text-[#1A1A1A]/70 mb-1">Destinație</label>
+                    <select className="w-full rounded-md border border-[#2F4F2F]/20 bg-white px-3 py-2 outline-none focus:border-[#2F4F2F]">
+                      <option>HORECA</option>
+                      <option>Retail</option>
+                      <option>Acasă</option>
+                    </select>
+                  </div>
                 </div>
                 <div>
                   <label className="block text-sm text-[#1A1A1A]/70 mb-1">Mesaj</label>
                   <textarea rows="4" className="w-full rounded-md border border-[#2F4F2F]/20 bg-white px-3 py-2 outline-none focus:border-[#2F4F2F]" placeholder="Cantități, scop, termen de livrare etc." />
                 </div>
-                <button className="w-full rounded-full bg-[#1A1A1A] text-white py-3 hover:bg-[#2F4F2F] transition-colors">Trimite</button>
+                <button className="w-full rounded-full bg-gradient-to-b from-[#1A1A1A] to-[#2F4F2F] text-white py-3 shadow-sm hover:shadow-md transition-all">Trimite</button>
               </div>
             ) : (
               <div className="text-center py-10">

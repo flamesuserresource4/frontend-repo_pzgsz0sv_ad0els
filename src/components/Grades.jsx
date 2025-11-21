@@ -13,7 +13,7 @@ function Grades() {
             { name: 'Uji Heritage', note: 'echilibru fin, catifelat', color: '#2F4F2F', use: 'latte premium' },
             { name: 'Daily Ceremonial', note: 'versatil, proaspăt', color: '#9DC77C', use: 'horeca & retail' },
           ].map((g, i) => (
-            <div key={i} className="rounded-2xl border border-[#2F4F2F]/10 overflow-hidden bg-[#F5F0E8]">
+            <div key={i} className="group rounded-2xl border border-[#2F4F2F]/10 overflow-hidden bg-[#F5F0E8] transition-transform duration-300 hover:-translate-y-0.5">
               <div className="h-2" style={{background:g.color}} />
               <div className="p-6">
                 <h3 className="text-xl font-serif text-[#1A1A1A]">{g.name}</h3>
