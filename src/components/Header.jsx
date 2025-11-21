@@ -1,4 +1,4 @@
-import { Menu } from 'lucide-react'
+import { Menu, ShoppingCart } from 'lucide-react'
 import { useState } from 'react'
 
 function Header() {
@@ -22,17 +22,20 @@ function Header() {
 
           <nav className="hidden md:flex items-center gap-8 text-sm">
             {[
-              { href:'#origine', label:'Origine' },
+              { href:'#magazin', label:'Magazin' },
               { href:'#produse', label:'Grade' },
               { href:'#beneficii', label:'Pentru afaceri' },
             ].map((item)=> (
-              <a key={item.href} href={item.href} className="relative text-[#1A1A1A]/80 hover:text-[#1A1A1A] transition-colors">
+              <a key={item.href} href={item.href} className="relative text-[#1A1A1A]/80 hover:text-[#1A1A1A] transition-colors group">
                 <span className="pb-1">{item.label}</span>
                 <span className="absolute -bottom-1 left-0 w-0 h-[1.5px] bg-[#2F4F2F] transition-all duration-300 group-hover:w-full" />
               </a>
             ))}
             <a href="#contact" className="px-4 py-2 rounded-full bg-gradient-to-b from-[#1A1A1A] to-[#2F4F2F] text-white shadow-sm hover:shadow-md transition-all">
-              Solicită ofertă
+              Solicită ofertă B2B
+            </a>
+            <a href="#cos" className="relative p-2 rounded-full hover:bg-[#2F4F2F]/5 transition-colors" aria-label="Cos de cumpărături">
+              <ShoppingCart className="w-5 h-5 text-[#1A1A1A]" />
             </a>
           </nav>
 
@@ -45,10 +48,11 @@ function Header() {
       {open && (
         <div className="md:hidden border-t border-[#2F4F2F]/10 bg-white/90 backdrop-blur">
           <div className="max-w-6xl mx-auto px-4 py-4 flex flex-col gap-2 text-sm">
-            <a href="#origine" className="py-2">Origine</a>
+            <a href="#magazin" className="py-2">Magazin</a>
             <a href="#produse" className="py-2">Grade</a>
             <a href="#beneficii" className="py-2">Pentru afaceri</a>
-            <a href="#contact" className="py-2">Solicită ofertă</a>
+            <a href="#contact" className="py-2">Solicită ofertă B2B</a>
+            <a href="#cos" className="py-2">Coș</a>
           </div>
         </div>
       )}
